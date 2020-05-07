@@ -161,6 +161,10 @@ header .brand-name a {
     text-transform: uppercase;
     position: relative;
 }
+header .navbar {
+    position: relative;
+    float: right;
+}
 header .fixed .brand-name a {
     color: black;
 }
@@ -653,7 +657,7 @@ footer .social a:hover {
 }
 
 @media(max-width: 767px){
-    /*header {
+    header {
         padding: 15px;
         position: fixed;
         background-color: white;
@@ -685,16 +689,6 @@ footer .social a:hover {
     }
     header .navbar ul li a::before {
         background-color: #40c3ff;
-    }*/
-    .navbar{
-        font-size: 0px;
-    }
-    header {
-        padding: 0px;
-        position: fixed;
-        border: none;
-        font-size: 2px;
-        font-weight: 200;
     }
     .active {
         display: block;
@@ -713,6 +707,10 @@ footer .social a:hover {
         flex: 0 0 100%;
         max-width: 100%;
         height: 310px;
+    }
+    .portfolio .card {
+        height: 40%;
+        width: 55%;
     }
     .awards .writing p {
         font-size: 25px;
@@ -745,9 +743,9 @@ html {
                 <div class="brand-name">
                     <a href="#" class="logo">RAJAN</a>
                 </div>
-              <!--<div class="ham-burger">
+              <div class="ham-burger">
                     <i class="fa fa-bars" aria-hidden="true"></i>
-                </div>-->
+                </div>
                 <div class="navbar">
                     <ul>
                         <li><a href="#home" class="active">Home</a></li>
@@ -1040,7 +1038,7 @@ function erase() {
 document.addEventListener("DOMContentLoaded",function(){
     setTimeout(type,newTextDelay+200);
 })
-const navbar = document.querySelector(".navbar");
+/*const navbar = document.querySelector(".navbar");
     a=navbar.querySelectorAll("a");
 
     a.forEach(function(element){
@@ -1056,7 +1054,21 @@ const navbar = document.querySelector(".navbar");
 const hamBurger=document.querySelector(".ham-burger");
 hamBurger.addEventListener("click",function(){
     document.querySelector(".navbar").classList.toggle("show");
-})
+})*/
+
+window.onLoad=load();
+window.onscroll=function(){
+    const docScrollTop=document.documentElement.scrollTop;
+
+    if(window.innerWidth>991){
+        if(docScrollTop>100){
+            document.querySelector("header").classList.add("fixed")
+        }
+        else{
+            document.querySelector("header").classList.remove("fixed")
+        }
+    }
+}
 
  </script>
  </section>
