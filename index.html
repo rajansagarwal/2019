@@ -25,6 +25,450 @@
             </div>
             </div>
         </header>
+        <style>
+            @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+*  {
+    box-sizing: border-box;
+    margin: 0;
+}
+.section-title {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 40px;
+}
+.section-title h1{
+    display: inline-block;
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight:700;
+    margin:0 0 5px;
+    color: black;
+    position: relative;
+}
+.section-title h1:before {
+    content: '';
+    left: 0;
+    position: absolute;
+    height: 2px;
+    right: 30%;
+    bottom: 0%;
+    background-color: #40c3ff;
+}
+.text-uppercase{
+    text-transform: uppercase!important;
+}
+.section-title p.small {
+    display: block;
+    font-size: 19px;
+    color: #838383;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+.text-center {
+    text-align: center!important;
+}
+.text-left {
+    text-align: left!important;
+}
+.text-right {
+    text-align: right!important;
+}
+.home{
+    min-height: 100vh;
+    background: rgb(73,133,150);
+    background: linear-gradient(90deg, rgba(73,133,150,1) 0%, rgba(40,100,108,1) 50%, rgba(8,65,103,1) 100%);
+    background-size: cover;
+    background-position: center;
+    padding: 15px;
+}
+.home .full-screen {
+    min-height: 100vh;
+}
+.home .home-content {
+    flex: 0 0 100%;  
+    max-width: 100%;
+    display: flex;
+}
+.home .home-content {
+    flex: 0 0 100%;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.home .home-content .block {
+flex: 0 0 75%;
+max-width: 75%;
+padding-left: 35px;
+border-left: 5px solid white;
+margin-top: 50px;
+}
+.home .home-content .block h6{
+    color: white;
+    font-size: 12px;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+}
+.home .home-content .block h1{
+    color: white;
+    font-size: 70px;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+}
+.home .home-content .block h4{
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0 0 10px;
+    padding: 0;
+}
+.home .home-content .block .cv-btn {
+    padding-top: 20px;
+}
+.home .home-content .block .cv-btn a{
+    border-radius: 4px;
+    color: white;
+    border: 1px solid white;
+    padding: 12px 25px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: all .5s ease;
+    background-color: transparent;
+}
+
+.home .home-content .block .cv-btn a:hover{
+    background-color: white;
+    color: black;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+header {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    border-bottom: 0px solid #423940;
+    padding: 0px 15px;
+    z-index: 10;
+}
+header .row {
+    justify-content: space-between; 
+    align-items: center;
+} 
+header .brand-name a {
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 600;
+    color: white;
+    text-transform: uppercase;
+    position: relative;
+}
+header .navbar ul li a::before {
+    content: '';
+    height: 3px;
+    background-color: white;
+    width: 0;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    bottom: -1px;
+    transition: all .5s ease;
+}
+header .navbar ul li a:hover::before {
+    width: 100%;
+    left: 0;
+}
+header .navbar ul li a.active::before {
+    width: 100%;
+    left: 0; 
+}
+header .navbar ul {
+list-style: none;
+padding: 0px;
+}
+header .navbar ul li {
+    display: inline-block;
+    margin-left: 35px;
+}
+header .navbar ul li a {
+    font-size: 15px;
+    text-decoration: none;
+    line-height: 75px;
+    color: white;
+    display: block;
+    font-weight: 600;
+    position: relative;
+}
+
+.container {
+    max-width: 1140px;
+    margin: auto;
+}
+/*AboutMe*/
+.about-me {
+    padding: 100px 15px;
+    background: rgb(227,233,244);
+background: linear-gradient(90deg, rgba(227,233,244,1) 0%, rgba(240,240,240,1) 50%, rgba(225,244,242,1) 100%);
+    
+}
+.about-me .section-title {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 40px;
+}
+.about-me .section-title h1{
+    display: inline-block;
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight:700;
+    margin:0 0 5px;
+    color: black;
+    position: relative;
+}
+.about-me .section-title h1:before {
+    content: '';
+    left: 0;
+    position: absolute;
+    height: 2px;
+    right: 30%;
+    bottom: 0%;
+    background-color: #40c3ff;
+}
+.text-uppercase{
+    text-transform: uppercase!important;
+}
+.about-me .section-title p.small {
+    display: block;
+    font-size: 19px;
+    color: #838383;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+.about-me .about-content .img{
+    flex: 0 0 33.33%;
+    max-width: 33.33%
+}
+.about-me .about-content .img img {
+    display: block;
+    max-width: 100%;
+}
+
+.about-me .about-content .text{
+    flex: 0 0 66.66%;
+    max-width: 66.66%;
+}
+.about-me .about-content .text h4 {
+    font-size: 25px;
+    font-weight: 600;
+    margin: 0 0 10px;
+    color: black;
+}
+.about-me .about-content .text h6{
+    font-size: 25px;
+    font-weight: 400;
+    margin: 0 0 15px;
+    color: black;
+}
+.about-me .about-content .text h6 span{
+    color: #40c3ff;
+}
+.about-me .about-content .text p{
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #838383;
+    margin: 0 0 20px;
+}
+.about-me .about-content .text .info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.about-me .about-content .text .info .list {
+    flex: 0 0 calc(50% - 15px);
+    max-width: calc(50% - 15px);
+    margin-top: 10px;
+    
+    border-bottom: 1px solid #dee2e6;
+    padding-bottom: 10px;
+}
+.about-me .about-content .text .info .list label{
+    padding-right: 10px;
+    color: black;
+    font-weight: 600;
+    font-size: 15px;
+}
+.about-me .about-content .text .info .list p{
+    margin: 0;
+}
+.about-me .about-content .text .social-links {
+    padding-top: 25px;
+}
+.about-me .about-content .text .social-links a{
+    height: 30px;
+    width: 30px;
+    background-color: black;
+    border-radius: 3px;
+    display: inline-block;
+    border: 1px solid black;
+    line-height: 28px;
+    text-align: center;
+    margin: 0 4px;
+    color: white;
+
+}
+.about-me .about-content .text .social-links a .fa{
+    
+    font-size: 12px;
+}
+.about-me .about-content .text .social-links a:hover {
+    background-color: white;
+    color: black;
+    transition: all 0.5s ease;
+}
+/*Skills*/
+.services {
+    background: rgb(145,175,226);
+background: linear-gradient(90deg, rgba(145,175,226,1) 0%, rgba(245,248,253,1) 50%, rgba(119,166,245,1) 100%);
+    padding: 100px 0 70px;
+}
+.services .section-title h1:before {
+    left: 25%;
+}
+.services .service-content {
+    flex: 0 0 100%;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.services .service-content .box {
+    background-color: white;
+    padding: 30px;
+    flex: 0 0 calc(33.33% - 20px);
+    max-width:calc(33.33% - 20px);
+    margin-bottom: 30px;
+    border-left: 20px solid red;
+    border: 1px solid #eeeeee;
+    text-align: center;
+    position: relative;
+}
+.services .service-content .box::before {
+    content: '';
+    height: 2px;
+    background-color: #40c3ff;
+    position: absolute;
+    bottom: 0px;
+    width: 50px; 
+    left: 0;
+    right: 0;
+    margin: auto;
+    transition: all .7s ease;
+}
+.services .service-content .box:hover::before {
+    width: 100%;
+}
+
+.services .service-content .box .icon{
+    height: 60px;
+    width: 60px;
+    background-color: #87beeb;
+    margin: 10px auto 20px;
+    border-radius: 50%;
+    text-align: center;
+}
+.services .service-content .box .icon .fa{
+    font-size: 25px;
+    color: white;
+    line-height: 60px;
+}
+.services .service-content .box h5{
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+    margin: 0;
+}
+.about-me .about-content .text p {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #838383;
+    margin: 10px 0 10px;
+}
+/*Portfolio*/
+.portfolio {
+    background: rgb(227,233,244);
+background: linear-gradient(90deg, rgba(227,233,244,1) 0%, rgba(240,240,240,1) 50%, rgba(225,244,242,1) 100%);
+}
+.portfolio .section-title h1:before {
+    left: 30%;
+}
+.thing {
+    max-width: 1000px;
+    margin: 100px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.card {
+    position: relative;
+    margin: 20px 0;
+    width: 300px;
+    height: 400px;
+    background: #fff;
+    transition: 1s;
+    border-radius: 1%;
+    box-shadow: inset 300px 0 50px rgba(0,0,0,0.5);
+}
+.card:hover {
+    z-index: 1000;
+    transform: perspective(2000px) rotate(-10deg)
+        ;
+    box-shadow: inset 30px 0 50px rgba(0,0,0,0.5)
+        ;
+}
+.card .imgBox {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+    box-sizing: border-box;
+    transform-origin: left;
+    z-index: 1;
+    transition: 1s;
+}
+.card:hover .imgBox {
+    transform: rotateY(-135deg);
+}
+.card .imgBox .img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 2%;
+}
+.card .details {
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    padding: 20px;
+}
+        </style>
         <!--Home-->
  <section class="home">
     <div class="container">
