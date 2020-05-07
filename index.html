@@ -145,7 +145,7 @@ header {
     padding: 0px 15px;
     z-index: 11;
 }
-header .fixed {
+header.fixed {
     background-color: white;
     position: fixed;
 }
@@ -198,7 +198,7 @@ header .navbar ul li {
 header .navbar ul li a {
     font-size: 15px;
     text-decoration: none;
-    line-height: 75px;
+    line-height: 42px;
     color: white;
     display: block;
     font-weight: 600;
@@ -654,45 +654,65 @@ footer .social a:hover {
     .awards .writing p {
         font-size: 30px;
     }
-}
-
-@media(max-width: 767px){
     header {
         padding: 15px;
-        position: fixed;
+        position: relative;
         background-color: white;
         border: none;
-    }
-    .ham-burger .fa {
-        display: inline-block;
+        color: black;
+        font-size: 0px;
     }
     header .brand-name a {
         color: black;
+        font-size: 23px;
+    }
+    header .navbar ul li a {
+        color: black;
+        font-size: 15px;
     }
     .navbar {
         position: absolute;
         background-color: white ;
         left: 0px;
-        width: 100%;
-        top: 60px;
+        width: 87%;
         padding : 15px;
-        border-top: 1px solid #eeeeee;
-        display: none;
+        font-size: 3px;
     }
-    header .navbar ul li {
-        display: block;
-        margin-left: 0;
+}
+
+@media(max-width: 767px){
+    header {
+        padding: 15px;
+        position: relative;
+        background-color: white;
+        border: none;
+        color: black;
+        font-size: 0px;
+    }
+    header .brand-name a {
+        color: black;
+        font-size: 20px;
     }
     header .navbar ul li a {
-        line-height: 42px;
         color: black;
+        font-size: 13px;
     }
-    header .navbar ul li a::before {
-        background-color: #40c3ff;
+    .navbar {
+        position: absolute;
+        background-color: white ;
+        left: 0px;
+        width: 87%;
+        padding : 15px;
+        font-size: 3px;
+    }
+    /*header .navbar ul li {
+        display: block;
+        margin-left: 0;
+        color: black
     }
     .active {
         display: block;
-    }
+    }*/
     .services .box {
         top: 0;
         left: 0;
@@ -745,11 +765,26 @@ footer .social a:hover {
         height: 18%;
         font-size: 70%;
     }
+    header {
+        padding: 5px;
+        position: relative;
+        background-color: white;
+        border: none;
+        color: black;
+        font-size: 0px;
+    }
+    header .brand-name a {
+        color: black;
+        font-size: 15px;
+    }
+    header .navbar ul li a {
+        color: black;
+        font-size: 8px;
+    }
 }
 html {
     scroll-behavior: smooth;
 }
-
 
     </style>
     <body>
