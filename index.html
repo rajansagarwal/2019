@@ -1,32 +1,4 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Rajan Agarwal</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
-        <link rel="stylesheet" type="text/css" href="style.css">
-    </head>
-    <body>
-
-        <header>
-            <div class="container">
-                <div class="row">
-                <div class="brand-name">
-                    <a href="#" class="logo">RAJAN</a>
-                </div>
-                <div class="navbar">
-                    <ul>
-                        <li><a href="#" class="active">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Skills</a></li>
-                        <li><a href="#">Portfolio</a></li>
-                        <li><a href="#">Awards</a></li>
-                    </ul>
-                </div>
-            </div>
-            </div>
-        </header>
-        <style>
-            @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
 @import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 body {
     margin: 0;
@@ -81,8 +53,9 @@ body {
 }
 .home{
     min-height: 100vh;
-    background: rgb(73,133,150);
-    background: linear-gradient(90deg, rgba(73,133,150,1) 0%, rgba(40,100,108,1) 50%, rgba(8,65,103,1) 100%);
+    /*background: rgb(73,133,150);
+    background: linear-gradient(90deg, rgba(73,133,150,1) 0%, rgba(40,100,108,1) 50%, rgba(8,65,103,1) 100%);*/
+    background: url(background4.png);
     background-size: cover;
     background-position: center;
     padding: 15px;
@@ -111,21 +84,21 @@ margin-top: 50px;
 }
 .home .home-content .block h6{
     color: white;
-    font-size: 20px;
+    font-size: 12px;
     font-weight: 500;
     margin: 0;
     padding: 0;
 }
 .home .home-content .block h1{
     color: white;
-    font-size: 75px;
+    font-size: 70px;
     font-weight: 600;
     margin: 0;
     padding: 0;
 }
 .home .home-content .block h4{
     color: white;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 500;
     margin: 0 0 10px;
     padding: 0;
@@ -161,7 +134,11 @@ header {
     right: 0px;
     border-bottom: 0px solid #423940;
     padding: 0px 15px;
-    z-index: 10;
+    z-index: 11;
+}
+header .fixed {
+    background-color: white;
+    position: fixed;
 }
 header .row {
     justify-content: space-between; 
@@ -174,6 +151,9 @@ header .brand-name a {
     color: white;
     text-transform: uppercase;
     position: relative;
+}
+header .fixed .brand-name a {
+    color: black;
 }
 header .navbar ul li a::before {
     content: '';
@@ -340,8 +320,7 @@ background: linear-gradient(90deg, rgba(227,233,244,1) 0%, rgba(240,240,240,1) 5
 }
 /*Skills*/
 .services {
-    background: rgb(145,175,226);
-background: linear-gradient(90deg, rgba(145,175,226,1) 0%, rgba(245,248,253,1) 50%, rgba(119,166,245,1) 100%);
+    background: whitesmoke;
     padding: 100px 0 70px;
 }
 .services .section-title h1:before {
@@ -468,243 +447,282 @@ background: linear-gradient(90deg, rgba(227,233,244,1) 0%, rgba(240,240,240,1) 5
     box-sizing: border-box;
     padding: 20px;
 }
-        </style>
-        <!--Home-->
- <section class="home">
-    <div class="container">
-        <div class="row full-screen">
-            <div class="home-content">
-                <div class="block">
-                <h6>Hi there, I'm</h6>
-                <h1>Rajan Agarwal</h1>
-                <h4>Aspirer. Musician. Creator. Leader.</h4>
-                <div class="cv-btn">
-                    <a href="">Download CV</a>
-                </div>
-                </div>
-            </div>
-        </div>
-    </div>
- </section>
- <!--About-->
- <section class="about-me">
-     <div class="container">
-         <div class="row">
-             <div class="section-title">
-                 <h1>About Me</h1>
-                 <p class="small text-uppercase">Get to know me!</p>
-             </div>
-         </div>
-         <div class="row">
-             <div class="about-content">
-                 <div class="img">
-                     <!--<img src="image.jpg" alt="about-me">-->
-                 </div>
-                 <div class="text">
-                     <h4>I'm Rajan Agarwal</h4>
-                     <h6>A determined <span>Student Leader </span>who aspires for <span>Greatness</span></h6>
-                     <p>I am a 14 year old student that has placed in a provincial competition, co-represented a school and company, spoken on live TV, started a business and met Barak Obama! And I've just started high school!</p>
-                     <div class="info">
-                        <div class="list">
-                            <label>Birthday: </label>
-                            <p>June 9th, 2005</p>
-                        </div>
-                        <div class="list">
-                        <label>Email: </label>
-                         <p>rajan.ag005@gmail.com</p>
-                         </div>
+/*Awards*/
 
-                         <div class="list">
-                         <label>Age: </label>
-                         <p>14</p>
-                         </div>
-
-                         <div class="list">
-                         <label>Phone: </label>
-                         <p>1+(647)-973-4401</p>
-                         </div>
-
-                         <div class="list">
-                            <label>Residence: </label>
-                            <p>Brampton, ON</p>
-                            </div>
-
-                         <div class="list">
-                         <label>Instagram: </label>
-                         <p>@itsrajan05</p>
-                         </div>
-
-                         <div class="list">
-                         <label>School: </label>
-                         <p>Turner Fenton SS</p>
-                         </div>
-
-                         <div class="list">
-                            <label>Program: </label>
-                            <p>International Baccelaureate MYP</p>
-                            </div>
-                        </div>
-                     <!--Social-->
-            <div class="social-links">
-                <a href="#"><i class="fa fa-instagram"></i></a>
-                <a href="#"><i class="fa fa-twitter"></i></a>
-                <a href="#"><i class="fa fa-facebook"></i></a>
-                <a href="#"><i class="fa fa-github"></i></a>
-                     </div>
-                 </div>
-                 </div>
-             </div>
-            </div>
-        </div>
-         </div>
-     </div>
-     <!--Skills-->
-     <section class="services">
-         <div class="container">
-             <div class="row">
-                <div class="section-title text-center">
-                    <h1>My Skills</h1>
-                </div>     
-             </div>
-             <div class="row">
-                 <div class="service-content">
-                         <div class="box">
-                          <div class="icon">
-                            <i class="fa fa-trophy"></i>
-                          </div>
-                          <h5>Athletics</h5>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lacinia at quis risus sed vulputate odio ut. Eu consequat ac felis donec et odio pellentesque. Blandit turpis cursus in hac habitasse platea dictumst.</p>
-
-                         </div>
-
-                         <div class="box">
-                            <div class="icon">
-                              <i class="fa fa-calculator"></i>
-                            </div>
-                            <h5>Academics</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lacinia at quis risus sed vulputate odio ut. Eu consequat ac felis donec et odio pellentesque. Blandit turpis cursus in hac habitasse platea dictumst.</p>
-                            
-                           </div>
-
-                           <div class="box">
-                            <div class="icon">
-                              <i class="fa fa-code"></i>
-                            </div>
-                            <h5>Responsive Web/Software Design</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lacinia at quis risus sed vulputate odio ut. Eu consequat ac felis donec et odio pellentesque. Blandit turpis cursus in hac habitasse platea dictumst.</p>
-                            
-                           </div>
-
-                           <div class="box">
-                            <div class="icon">
-                              <i class="fa fa-users"></i>
-                            </div>
-                            <h5>Culture</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lacinia at quis risus sed vulputate odio ut. Eu consequat ac felis donec et odio pellentesque. Blandit turpis cursus in hac habitasse platea dictumst.</p>
-                            
-                           </div>
-
-                           <div class="box">
-                            <div class="icon">
-                              <i class="fa fa-music"></i>
-                            </div>
-                            <h5>Music</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lacinia at quis risus sed vulputate odio ut. Eu consequat ac felis donec et odio pellentesque. Blandit turpis cursus in hac habitasse platea dictumst.</p>
-                            
-                           </div>
-
-                           <div class="box">
-                            <div class="icon">
-                              <i class="fa fa-briefcase"></i>
-                            </div>
-                            <h5>Bussiness/Public Speaking</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lacinia at quis risus sed vulputate odio ut. Eu consequat ac felis donec et odio pellentesque. Blandit turpis cursus in hac habitasse platea dictumst.</p>                      
-                           </div>
-                 </div>
-             </div>
-         </div>
-     </section>
- </section>
- <!--Portfolio-->
- <section class="portfolio" id="sec">
-    
-        <div class="container">
-            <div class="row">
-                <div class="section-title text-center">
-                    <h1>My Projects</h1>
-                    <p class="small text-uppercase">Designs, Creations and Innovations</p>
-                </div>
-              </div>
-              </div>
-        <div class="thing">
-    <div class="card">
-        <div class="imgBox">
-            <img src="forest.jpg" height="100%" width="100%">
-        </div>
-        <div class="details">
-            <h2>Lorem Ipsum Dolor</h2>
-            <p>Blah Blah Blah Blah Blah Blah Blah</p>
-        </div>
-    </div>
-    <div class="card">
-        <div class="imgBox">
-            <img src="forest.jpg" height="100%" width="100%">
-        </div>
-        <div class="details">
-            <h2>Lorem Ipsum Dolor</h2>
-            <p>Blah Blah Blah Blah Blah Blah Blah</p>
-        </div>
-    </div>
-    <div class="card">
-        <div class="imgBox">
-            <img src="forest.jpg" height="100%" width="100%">
-        </div>
-        <div class="details">
-            <h2>Lorem Ipsum Dolor</h2>
-            <p>Blah Blah Blah Blah Blah Blah Blah</p>
-        </div>
-    </div>
-    <div class="card">
-        <div class="imgBox">
-            <img src="forest.jpg" height="100%" width="100%">
-        </div>
-        <div class="details">
-            <h2>Lorem Ipsum Dolor</h2>
-            <p>Blah Blah Blah Blah Blah Blah Blah</p>
-        </div>
-    </div>
-    <div class="card">
-        <div class="imgBox">
-            <img src="forest.jpg" height="100%" width="100%">
-        </div>
-        <div class="details">
-            <h2>Lorem Ipsum Dolor</h2>
-            <p>Blah Blah Blah Blah Blah Blah Blah</p>
-        </div>
-    </div>
-    <div class="card">
-        <div class="imgBox">
-            <img src="forest.jpg" height="100%" width="100%">
-        </div>
-        <div class="details">
-            <h2>Lorem Ipsum Dolor</h2>
-            <p>Blah Blah Blah Blah Blah Blah Blah</p>
-        </div>
-    </div>
-</div>
-</div>
-</section>
-<!--Awards-->
-<section class="awards">
-    <div class="container">
-        <div class="row">
-            <div class="section-title text-center">
-                <h1>Awards</h1>
-                <p class="small text-uppercase">My Accomplishments!</p>
-            </div>
-          </div>
-          </div>
-          </section>
+.writing{
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 150px;
+    background: now;
+}
+.writing p {
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    text-align: center;
+    overflow: hidden;
+    padding: 0.5rem;
+    position: absolute;
+}
+.writing span {
+    font-weight: normal;
+    color: #40c3ff;
+}
+.cursor {
+    display: inline-block;
+    width: 2px;
+    height: 40px;
+    background-color: #40c3ff;
+    margin-left: 0.1rem;
+    animation: blink 1s infinite;
+}
+.cursor.typing {
+    animation: none;
+}
+@keyframes blink {
+    0% {background-color: black;}
+    50% {background-color: transparent;}
+    100% {background-color: black;}
+}
+/*contact*/
+.contact {
+    padding: 100px 15px;
+    background-color: #f5f8fd;
+}
+.contact .section-title h1:before{
+    left: 30%;
+}
+.contact .contact-form {
+    background-color: white;
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 50px;
+    border: 1px solid #eeeeee;
+    border-radius: 4px;
+}
+.contact .contact-form .text {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding-bottom: 20px;
+}
+.contact .contact-form .text h2 {
+    font-size: 26px;
+    font-weight: 600;
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+.contact .contact-form .text p {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #838383;
+    margin: 0px;
+}
+.contact .contact-form .space-between {
+    justify-content: space-between;
+}
+.contact .contact-form .col-6 {
+    flex: 0 0 calc(50% - 15px);
+    max-width: calc(50% - 15px);
+}
+.contact .contact-form .col-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.contact .contact-form .form-control {
+    height: 45px;
+    width: 100%;
+    margin-bottom: 15px;
+    border: 1px solid #ced4da;
+    padding: 6px 12px;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+}
+.contact .contact-form textarea.form-control{
+    height: 140px;
+}
+.contact .contact-form .form-control::placeholder{
+    color: #838383;
+}
+.contact .contact-form .button  {
  
-</body>
-</html>
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.contact .contact-form .button a {
+    border-radius: 4px;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: all .5s ease;
+    background-color: #40c3ff;
+    box-shadow: 0px 10px 15px #e8e8e8;
+}
+.contact .contact-form .button a:hover {
+    background-color: black;
+    color: white;
+}
+/*Footer*/
+footer {
+    padding: 70px 15px;
+    background-color: #0c0c17;
+}
+footer .logo{
+    color:  white;
+    font-weight: 700;
+    flex: 0 0 100%;
+    max-width: 100%;
+    text-align: center;
+    font-size: 45px;
+}
+footer .social{
+    flex: 0 0 100%;
+    max-width: 100%;
+    text-align: center;
+    color: #eeeeee;
+    padding-top: 15px;
+}
+footer .social a {
+    color: #999999;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0px 12px;
+    transition: all .5s ease;
+    text-decoration: none;
+}
+footer .social a:hover {
+    color: white;
+}
+/*creator*/
+.creator {
+    background-color: #0c0c17;
+    border-top: 1px solid #1d1d27;
+    padding: 15px;
+}
+.creator p {
+    color: #838383;
+    margin: 0;
+    text-align: center;
+    font-weight: 400;
+    font-size: 15px;
+}
+.ham-burger .fa {
+    font-size: 20px;
+    height: 27px;
+    width: 35px;
+    background-color: white;
+    color: black;
+    border-radius: 3px;
+    line-height: 27px;
+    text-align: center;
+    cursor: pointer;
+    display: none;
+    border: 1px solid #eeeeee;
+}
+@media(max-width: 1120px) {
+    .services .service-content .box {
+        padding: 30px;
+        flex: 0 0 100%;
+        max-width: 50%;
+        height: 300px;
+    }
+}
+@media(max-width: 991px){
+    .home .home-content .block h1 {
+        font-size: 40px;
+    }
+    .awards .writing p {
+        font-size: 30px;
+    }
+}
+
+@media(max-width: 767px){
+    /*header {
+        padding: 15px;
+        position: fixed;
+        background-color: white;
+        border: none;
+    }
+    .ham-burger .fa {
+        display: inline-block;
+    }
+    header .brand-name a {
+        color: black;
+    }
+    .navbar {
+        position: absolute;
+        background-color: white ;
+        left: 0px;
+        width: 100%;
+        top: 60px;
+        padding : 15px;
+        border-top: 1px solid #eeeeee;
+        display: none;
+    }
+    header .navbar ul li {
+        display: block;
+        margin-left: 0;
+    }
+    header .navbar ul li a {
+        line-height: 42px;
+        color: black;
+    }
+    header .navbar ul li a::before {
+        background-color: #40c3ff;
+    }*/
+    .navbar{
+        font-size: 0px;
+    }
+    header {
+        padding: 0px;
+        position: fixed;
+        border: none;
+        font-size: 2px;
+        font-weight: 200;
+    }
+    .active {
+        display: block;
+    }
+    .services .box {
+        top: 0;
+        left: 0;
+        box-sizing: border-box;
+        display: inline-block;
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+    .services .service-content .box {
+        padding: 30px;
+        flex: 0 0 100%;
+        max-width: 100%;
+        height: 310px;
+    }
+    .awards .writing p {
+        font-size: 25px;
+    }
+}
+@media(max-width: 500px) {
+    .home .home-content .block h1 {
+        font-size: 30px;
+    }
+    .home .home-content .block h3 {
+        font-size: 20px;
+    }
+    .home .home-content .block {
+        padding-left: 20px;
+    }
+    .awards .writing p {
+        font-size: 20px;
+    }
+}
+html {
+    scroll-behavior: smooth;
+}
